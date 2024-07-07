@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="preload" href="./img/portfolioo.jpg" as="image">
+    <title>Portfolio</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav id="navbar">
+                <img src="./img/logo2.png" alt="logo" class="logo">
+                <ul class="navlist">
+                    <li class="list-element"><a href="#about">Sobre mi</a></li>
+                    <li class="list-element"><a href="#projects">Proyectos</a></li>
+                    <li class="list-element"><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="intro" data-aos="fade-up">
+            <div class="inner">
+                <h1>Hola, soy <span>Juan Hernández</span></h1>
+                <p>Web Developer</p>
+            </div>
+        </section>
+
+        <section id="about" class="about" data-aos="fade-right">
+            <div class="inner">
+                <h2>Sobre mi</h2>
+                <p>Soy estudiante del Doble Grado en Ingeniería Informática y ADE en la Universidad de Granada. Me gusta aprender cosas nuevas cada día. Actualmente estoy aprendiendo nuevas teconologías basadas en JavaScript como React.js y Node.js ,y metodologías como web components</p>
+            </div>
+        </section>
+
+        <h1 class="separator" data-aos="fade-down">Proyectos</h1>
+
+        <section id="projects" class="projects" data-aos="zoom-in">
+            <div class="inner">
+                <a href="https://juanhdezz.github.io/app_tiempo/" class="project-link" target="_blank" data-aos="fade-up">
+                    <div class="project">
+                        <img src="./img/pronostico-del-tiempo.png" alt="project1">
+                        <h3>Tu Tiempo</h3>
+                        <p>Pronóstico del tiempo en cualquier ciudad que elijas</p>
+                    </div>
+                </a>
+                <a href="enlace2.html" class="project-link" data-aos="fade-up">
+                    <div class="project">
+                        <img src="img/project2.jpg" alt="project2">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción del proyecto 2</p>
+                    </div>
+                </a>
+                <a href="enlace3.html" class="project-link" data-aos="fade-up">
+                    <div class="project">
+                        <img src="img/project3.jpg" alt="project3">
+                        <h3>Proyecto 3</h3>
+                        <p>Descripción del proyecto 3</p>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
+
+        <h1 class="separator" data-aos="fade-left">Contacto</h1>
+
+        <section id="contact" class="contact">
+            <div class="inner">
+                <nav id="nav-redes">
+                    <ul class="navlist">
+                        <li class="list-element">
+                            <a href="https://www.linkedin.com/in/juan-hernandez-sag/" target="_blank">
+                                <div class="redsocial" data-aos="fade-up">
+                                    <img src="./img/linkedin.png" alt="perfil de linkedin">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-element">
+                            <a href="mailto:jhernandezsanchezagesta@gmail.com">
+                                <div class="redsocial" data-aos="fade-up">
+                                    <img src="./img/email.png" alt="email">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-element">
+                            <a href="tel:+34671364462">
+                                <div class="redsocial" data-aos="fade-up">
+                                    <img src="./img/telefono.png" alt="numero de telefono">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="inner">
+            <p>&copy; 2024 Juan Hernández. Todos los derechos reservados.</p>
+            <ul class="footer-nav">
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Chatbot flotante -->
+    <div id="chatbot-container">
+        <button id="chatbot-toggle-btn" aria-label="Abrir chatbot">Abrir Chatbot</button>
+        <div id="chatbot" aria-hidden="true">
+            <div id="chatbot-messages"></div>
+            <input type="text" id="chatbot-input" placeholder="Escribe aquí...">
+            <button id="chatbot-send-btn">Enviar</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/chatbot.js"></script>
+    
+</body>
+</html>

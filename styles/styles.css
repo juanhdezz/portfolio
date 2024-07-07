@@ -1,0 +1,243 @@
+body {
+    background-image: url("../img/portfolioo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    display: flex;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    justify-content: flex-end;
+    background-color: red;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-element {
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.list-element a {
+    color: white; /* Set the link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.list-element a:hover {
+    color: yellow; /* Optional: Change color on hover */
+}
+
+.logo{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 70%; /* Adjust this height as needed */
+    object-fit: contain;
+}
+
+.intro {
+    color: white;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.about {
+    color: white;
+    border: solid 10px brown;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.projects .inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-link {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
+    display: flex;
+    flex: 1 1 calc(30% - 20px); /* Ensure the link takes up the same space as the project */
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.project {
+    color: white;
+    border: solid 10px white;
+    border-radius: 5%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Ensure the project takes up the full width of the link */
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out; /* Animación suave */
+}
+.project:hover {
+    transform: translateY(-20px); /* Pequeño salto hacia arriba */
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.project p {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+.separator {
+    margin-top: 200px;
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav li a:hover {
+    color: yellow;
+}
+
+#nav-redes .navlist {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#nav-redes .list-element {
+    margin: 0 10px; /* Add some spacing between icons */
+}
+
+.redsocial img {
+    width: 80px; /* Set a fixed width for all images */
+    height: 80px; /* Set a fixed height for all images */
+    object-fit: contain; /* Ensure the images maintain their aspect ratio */
+    display: block; /* Remove any inline spacing */
+}
+
+/* Estilos para el chatbot flotante */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+#chatbot-toggle-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 0 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#chatbot-toggle-btn:hover {
+    transform: translateY(-5px);
+}
+
+#chatbot {
+    position: absolute;
+    bottom: 60px; /* Altura para dejar espacio al botón de toggle */
+    right: -320px; /* Inicialmente oculto fuera de la pantalla */
+    width: 300px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: right 0.3s ease;
+}
+
+#chatbot.active {
+    right: 20px; /* Mostrar el chatbot deslizándolo desde la derecha */
+}
+
+#chatbot-messages {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#chatbot-input {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chatbot-send-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+
+
