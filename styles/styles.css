@@ -253,9 +253,10 @@ footer {
     }
 
     .logo {
-        left: 50%;
-        transform: translateX(-50%);
-        position: relative; /* Change position to relative to avoid overlap */
+        height: 60px;
+        object-fit: contain;
+        position: relative;
+        margin: 0 auto;
     }
 }
 
