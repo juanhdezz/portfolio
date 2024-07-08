@@ -247,6 +247,17 @@ footer {
     margin-left: 10px;
 }
 
+@media (max-width: 768px) {
+    .navlist a {
+        display: none;
+    }
+
+    .logo {
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative; /* Change position to relative to avoid overlap */
+    }
+}
 
 
 
