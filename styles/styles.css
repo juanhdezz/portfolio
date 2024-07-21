@@ -259,6 +259,13 @@ footer {
         position: relative;
         margin: 0 auto;
     }
+    .projects .inner {
+        display: block;
+        
+    }
+
+    /*arreglar la pagina para hacerla con bootstrap y que cuando entre en la media query los proyectos se muestren en un carrusel bootstrap*/
+
 }
 
 
