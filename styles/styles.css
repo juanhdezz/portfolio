@@ -115,6 +115,7 @@ body {
 .project img {
     max-width: 100%;
     border-radius: 5%;
+    width: 300px;
 }
 
 .project h3 {
