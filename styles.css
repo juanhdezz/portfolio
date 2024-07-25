@@ -68,7 +68,8 @@ body {
 
 .carousel-item img {
   width: 100%;
-  height: auto;
+  height: 300px; /* Ajusta esta altura según sea necesario */
+  object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin distorsionarse */
 }
 
 .carousel-caption {
@@ -138,4 +139,9 @@ body {
 .navbar-nav .nav-link:hover {
   transform: translateY(-5px); /* Mueve el enlace hacia arriba */
   color: #f8f9fa; /* Cambia el color del texto si lo deseas */
+}
+.translucent-caption {
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco translúcido */
+  padding: 10px; /* Espaciado alrededor del texto */
+  border-radius: 10px; /* Bordes redondeados */
 }
