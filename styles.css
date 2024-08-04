@@ -34,22 +34,17 @@ body {
   padding: 10px;
 }
 
-.img-custom {
-  border-radius: 50%;
-  width: 50%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-}
-
 .img-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: auto;
   padding: 20px;
   margin-bottom: 20px;
+}
+
+.img-custom {
+  border-radius: 10px;
 }
 
 .carousel-container {
@@ -144,4 +139,30 @@ body {
   background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco translúcido */
   padding: 10px; /* Espaciado alrededor del texto */
   border-radius: 10px; /* Bordes redondeados */
+}
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden; /* Para que el cursor no se desplace fuera del contenedor */
+  border-right: .15em solid orange; /* Anima el cursor */
+  white-space: nowrap; /* Evita que el texto se rompa */
+  margin: 0 auto; /* Centra el texto */
+  letter-spacing: .15em; /* Aumenta la separación de las letras */
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.typing-text.finished {
+  border-right: none; /* Eliminar el cursor parpadeante */
+}
+
+/* Animación de escribir */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Animación de cursor */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
