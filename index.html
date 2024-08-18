@@ -79,73 +79,85 @@
 
 
     <!-- Proyectos -->
-    <section id="sec-proyectos" class="about">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6" data-aos="fade-right">
-            <h2 class="text-white">Proyectos</h2>
-            <p class="text-white">Estos son algunos de los proyectos que he desarrollado y que me han permitido poner en práctica lo aprendido.</p>
+<section id="sec-proyectos" class="about">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <h2 class="text-white">Proyectos</h2>
+        <p class="text-white">Estos son algunos de los proyectos que he desarrollado y que me han permitido poner en práctica lo aprendido.</p>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div id="projects" class="carousel slide carousel-container" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#projects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Proyecto 1"></button>
+            <button type="button" data-bs-target="#projects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#projects" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#projects" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#projects" data-bs-slide-to="4" aria-label="Slide 5"></button> <!-- Nuevo botón de indicador -->
           </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <div id="projects" class="carousel slide carousel-container" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#projects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Proyecto 1"></button>
-                <button type="button" data-bs-target="#projects" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#projects" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#projects" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://juanhdezz.github.io/app_tiempo/" target="_blank">
+                <img src="./imagenes/pronostico-del-tiempo.png" class="d-block w-100" alt="Pronóstico del tiempo">
+              </a>
+              <div class="carousel-caption d-md-block">
+                <h5>Tu Tiempo</h5>
+                <p>Pronóstico del tiempo en cualquier ciudad que elijas</p>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a href="https://juanhdezz.github.io/app_tiempo/" target="_blank">
-                    <img src="./imagenes/pronostico-del-tiempo.png" class="d-block w-100" alt="Pronóstico del tiempo">
-                  </a>
-                  <div class="carousel-caption d-md-block">
-                    <h5>Tu Tiempo</h5>
-                    <p>Pronóstico del tiempo en cualquier ciudad que elijas</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://t.me/youtube_a_MP3_bot" target="_blank">
-                    <img src="./imagenes/telegram.svg" class="d-block w-100" alt="Bot Convertidor de YouTube a MP3">
-                  </a>
-                  <div class="carousel-caption d-md-block">
-                    <h5>BOT Convertidor de YouTube a MP3</h5>
-                    <p>Bot programado en Python que convierte cualquier video de YouTube a MP3.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://github.com/juanhdezz/recetas" target="_blank">
-                    <img src="./imagenes/RecipeScrapper.png" class="d-block w-100" alt="Web Scrapper">
-                  </a>
-                  <div class="carousel-caption d-md-block translucent-caption">
-                    <h5 class="text-dark">Web Scrapper de Recetas</h5>
-                    <p class="text-dark">Aplicación Python de web scrapping de recetas de cocina.</p>
-                  </div>
-                </div>
-                <!-- Nuevo Proyecto: RoomRadar -->
-                <div class="carousel-item">
-                  <a href="https://github.com/juanhdezz/RoomRadar-Scrapper" target="_blank">
-                    <img src="./imagenes/capRoomRadar.png" class="d-block w-100" alt="RoomRadar">
-                  </a>
-                  <div class="carousel-caption d-md-block translucent-caption">
-                    <h5 class="text-dark">RoomRadar</h5>
-                    <p class="text-dark">Aplicación web para comparar precios de hoteles de Airbnb y Google Travel.</p>
-                  </div>
-                </div>
+            </div>
+            <div class="carousel-item">
+              <a href="https://t.me/youtube_a_MP3_bot" target="_blank">
+                <img src="./imagenes/telegram.svg" class="d-block w-100" alt="Bot Convertidor de YouTube a MP3">
+              </a>
+              <div class="carousel-caption d-md-block">
+                <h5>BOT Convertidor de YouTube a MP3</h5>
+                <p>Bot programado en Python que convierte cualquier video de YouTube a MP3.</p>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#projects" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#projects" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+            </div>
+            <div class="carousel-item">
+              <a href="https://github.com/juanhdezz/recetas" target="_blank">
+                <img src="./imagenes/RecipeScrapper.png" class="d-block w-100" alt="Web Scrapper">
+              </a>
+              <div class="carousel-caption d-md-block translucent-caption">
+                <h5 class="text-dark">Web Scrapper de Recetas</h5>
+                <p class="text-dark">Aplicación Python de web scrapping de recetas de cocina.</p>
+              </div>
+            </div>
+            <!-- Nuevo Proyecto: RoomRadar -->
+            <div class="carousel-item">
+              <a href="https://github.com/juanhdezz/RoomRadar-Scrapper" target="_blank">
+                <img src="./imagenes/capRoomRadar.png" class="d-block w-100" alt="RoomRadar">
+              </a>
+              <div class="carousel-caption d-md-block translucent-caption">
+                <h5 class="text-dark">RoomRadar</h5>
+                <p class="text-dark">Aplicación web para comparar precios de hoteles de Airbnb y Google Travel.</p>
+              </div>
+            </div>
+            <!-- Nuevo Proyecto: Detección de Fraude -->
+            <div class="carousel-item">
+              <a href="https://credit-fraud-detection-transactions.streamlit.app/" target="_blank">
+                <img src="./imagenes/creditfraud.jpg" class="d-block w-100" alt="Detección de Fraude">
+              </a>
+              <div class="carousel-caption d-md-block translucent-caption">
+                <h5 class="text-dark">Detección de Fraude en Transacciones</h5>
+                <p class="text-dark">Aplicación basada en machine learning para detectar transacciones fraudulentas.</p>
+              </div>
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#projects" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#projects" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- Contacto -->
     <section id="contact" class="contact justify-content-center">
