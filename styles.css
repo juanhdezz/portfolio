@@ -20,9 +20,11 @@ body {
 }
 
 .navbar-toggler {
-  border: none; /* Elimina el borde del toggler */
-  position: absolute;
-  right: 15px; /* Asegura que esté alineado a la derecha */
+  border-color: white; /* Cambia el borde del botón a blanco si lo tiene */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M1 2h14M1 8h14M1 14h14'/%3E%3C/svg%3E");
 }
 
 .tamanio {
@@ -41,11 +43,17 @@ body {
   height: auto;
   padding: 20px;
   margin-bottom: 20px;
+  background-color: transparent; /* Asegúrate de que el fondo sea transparente */
 }
 
 .img-custom {
   border-radius: 10px;
+  width: 100%;
+  /*max-width: 230px;*/
+  height: auto;
+  background: transparent; /* Asegura que el fondo sea transparente */
 }
+
 
 .carousel-container {
   width: 100%;
@@ -70,7 +78,17 @@ body {
 .carousel-caption {
   padding: 10px;
   border-radius: 10px;
-  font-size: 20px;
+  /*font-size: 20px;*/
+  font-size: 1.5vw;
+}
+
+.card {
+  background-color: transparent; /* Asegúrate de que el fondo sea transparente */
+  border: none; /* Quita cualquier borde si no es necesario */
+}
+
+.card-img-top {
+  border-radius: 10px;
 }
 
 @media (min-width: 768px) {
@@ -166,3 +184,84 @@ body {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
+
+/* Estilos generales aquí... */
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+  .bigscreen {
+      display: block; /* Mostrar en pantallas grandes */
+  }
+  
+  .reducedscreen {
+      display: none; /* Ocultar en pantallas grandes */
+  }
+  .projects .inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Centrar verticalmente los proyectos */
+    padding: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    flex: 1 1 calc(30% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.project {
+    color: white;
+    border: solid 10px white;
+    border-radius: 5%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+.project:hover {
+    transform: translateY(-20px); /* Pequeño salto hacia arriba */
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5%;
+    width: 300px;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.project p {
+    margin-top: 5px;
+    font-size: 1em;
+}
+.separator {
+  margin-top: 200px;
+  display: block;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  
+}
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 991px) {
+  .bigscreen {
+      display: none; /* Ocultar en pantallas pequeñas */
+  }
+  .reducedscreen {
+      display: block; /* Mostrar en pantallas pequeñas */
+  }
+}
+
