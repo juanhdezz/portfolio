@@ -1,10 +1,6 @@
 body {
-  background-color: hsla(357, 100%, 50%, 1);
-  background-image: radial-gradient(circle at 0% 99%, hsla(41, 100%, 50%, 1) 0%, transparent 67%), 
-                    radial-gradient(circle at 46% 94%, hsla(357, 100%, 50%, 1) 0%, transparent 81%), 
-                    radial-gradient(circle at 93% 95%, hsla(266, 100%, 23%, 1) 0%, transparent 66%), 
-                    radial-gradient(circle at 89% 8%, hsla(236, 100%, 9%, 1) 0%, transparent 150%);
-  background-blend-mode: normal, normal, normal, normal;
+  background-color: #111827; /* Gris muy oscuro, equivalente a gray-900 */
+  background-image: linear-gradient(to bottom right, #111827, #1f2937); /* Degradado de gray-900 a gray-800 */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,6 +8,8 @@ body {
   padding: 0;
   overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
+
+
 
 .navbar {
   position: fixed;
@@ -36,15 +34,20 @@ body {
   padding: 10px;
 }
 
+/* Asegúrate de que la imagen tenga un tamaño igual en ancho y alto para ser perfectamente circular */
+.profile-img {
+  width: 250px; /* Ajusta este valor según el tamaño deseado */
+  height: 250px; /* Asegúrate de que el alto sea igual al ancho para mantener la forma circular */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+}
+
+/* Contenedor para centrar la imagen y aplicar estilos adicionales si es necesario */
 .img-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: transparent; /* Asegúrate de que el fondo sea transparente */
 }
+
 
 .img-custom {
   border-radius: 10px;
@@ -108,12 +111,28 @@ body {
   }
 }
 
+/* Estilo para los iconos de redes sociales */
 .social-media {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  gap: 1rem; /* Espacio entre los iconos */
 }
+
+.social-icon {
+  color: #ffffff; /* Color de los iconos */
+  font-size: 2rem; /* Tamaño de los iconos */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+.social-icon:hover {
+  color: #f0f0f0; /* Color de los iconos al pasar el ratón (opcional) */
+}
+
+/* Estilo adicional para mejorar la accesibilidad */
+.social-icon:focus {
+  outline: 2px solid #ffffff; /* Resalta el icono cuando recibe el foco */
+}
+
 
 .rrss {
   width: 50px;
@@ -259,9 +278,11 @@ body {
 @media (max-width: 991px) {
   .bigscreen {
       display: none; /* Ocultar en pantallas pequeñas */
+
   }
   .reducedscreen {
       display: block; /* Mostrar en pantallas pequeñas */
   }
+  
 }
 
