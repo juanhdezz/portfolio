@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">I'm Juan Hernández</div>
+    <div class="text-3xl py-3 font-bold">Computer Science & Business Administration Student </div>
+    <div class="py-2">
+      
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="https://www.linkedin.com/in/juan-hernandez-sag" target="_blank"> Let's connect!</a>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+  </div>
+
+  <HorizontalCard
+    title="Detección de Fraude en Transacciones de Crédito"
+    img="/creditfraud.jpg"
+    desc="Aplicación basada en machine learning para detectar transacciones fraudulentas.Encuentra el informe del Análisis en mi repo de GitHub 😄"
+    url="https://credit-fraud-detection-transactions.streamlit.app/"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+  title="Bot convertidor de Youtube a MP3"
+  img="/y2mp3.jpg"
+  desc="Bot programado en Python que convierte cualquier video de YouTube a MP3."
+  url="https://t.me/youtube_a_MP3_bot"
+/>
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Tu Tiempo"
+    img="/tutiempo.jpg"
+    desc="Pronóstico del tiempo en cualquier ciudad que elijas"
+    url="https://juanhdezz.github.io/app_tiempo/"
+    badge=""
+  />
+
+  <!-- <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  } -->
+</BaseLayout>

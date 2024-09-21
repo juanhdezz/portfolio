@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I'm currently pursuing a double degree in Computer Engineering and Business Administration at the University of Granada. When I'm not hitting the books, you'll 
+    probably find me diving into new technologies, learning them on my own, and experimenting with different projects. I'm also pretty big on sports—football and padel 
+    are my favorites, and I try to stay active as much as I can. Outside of all that, I love hanging out with friends, hitting the beach, and spending time in the 
+    mountains. It's all about balancing studies, hobbies, and enjoying life to the fullest!
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Dual Degree at Computer Engineering & Business Adminisration"
+      subtitle="2020 to 2025 at Universidad de Granada, Granada, España"
+    />
+     <TimeLineElement
+      title="Secondary and High School"
+      subtitle="2015 to 2020 at Colegio Santo Domingo de Granada, Granada, España"
+    /> 
+  </div>
+
+  <!-- <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Job Title at Project or Company Name"
+      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Job Title at Project or Company Name"
+      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Job Title at Project or Company Name"
+      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    </TimeLineElement>
+  </div> -->
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> B2 First Certificate | Cambridge University</a>
+    </li>
+    <li>
+      <a href="https://www.cloudskillsboost.google/public_profiles/00b8fc3c-e60a-46fa-ab82-546b28574a14" target="_blank"> Cloud Digital Leader | Google</a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Gestion de Proyectos de Google | Coursera x Google</a>
+      <embed src="../../public/Coursera.pdf" type="application/pdf" width="600" height="500">
+    </li>
+    <li>
+      <a href="#" target="_blank"> Databricks Lakehouse Fundamentals | Databricks</a>
+      <embed src="../../public/cert.pdf" type="application/pdf" width="600" height="500">
+
+    </li>
+    <li>
+      <a href="#" target="_blank"> Scrum Foundations | Certiprof</a>
+      <embed src="../../public/Certificate.pdf" type="application/pdf" width="600" height="500"> 
+    </li>
+    <li>
+      <a href="#" target="_blank"> Data Analysis with Python | IBM</a>
+      <embed src="../../public/IBMcert.pdf" type="application/pdf" width="600" height="500"> 
+     
+    </li>
+    
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Python</li>
+    <li>C++</li>
+    <li>Java & JavaScript</li>
+    <li>SQL</li>
+    <li>HTML & CSS</li>
+    <li>Leadership</li>
+    <li>Project management</li>
+    <li>Communication</li>
+    <li>Data Science</li>
+    <li>Data Analysis</li>
+    <li>Data Engineering</li>
+    <!-- <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li> -->
+  </ul>
+</BaseLayout>
